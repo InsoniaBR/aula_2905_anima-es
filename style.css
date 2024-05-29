@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 50px;
+    justify-content: space-around;
+}
+
+#filho1 {
+    height: auto;
+    width: auto;
+    background-color: red;   
+    animation-name: fdp;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+    
+
+    
+}
+
+@keyframes fdp {
+    0% {
+        background-color: red;
+    }
+    50% {background-color: blue;
+    }
+    100% {
+       background-color: red;
+    }
+} 
+
+#filho2 {
+    height: auto;
+    width: auto;
+    background-color: red;
+    animation-name: jorge; 
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+    
+
+}
+
+@keyframes jorge {
+    0%  {background-color: red;}
+    25% {background-color: blue;}
+    50% {background-color: green;}
+    75%{background-color: yellow;}
+    100%  {background-color: red;}
+    0% { transform:rotate(0deg)} 
+    25% {transform: rotate(90deg)}
+    50% {transform: rotate(180deg)}
+    75% {transform: rotate(270deg)}
+    100% {transform: rotate(360deg)}
+}
+
+#filho3 {
+    height: auto;
+    width: auto;
+    position: relative;
+    animation-name: rafael;
+    background-color: red;
+    animation: rafael 3s infinite alternate, motivo 5s infinite 10s;
+
+    
+}
+
+@keyframes rafael {
+    0% {width: 0%;}
+    50% {width: 100%;}
+    100% {width: 0%;}
+
+}
+
+@keyframes motivo {
+    0%, 100% {
+        background-color: #3498db;
+      }
+    50% {
+        background-color: #e74c3c;
+      }
+    
+}
